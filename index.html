@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <section class="main">
+        <div class="cardinputs">
+            <input class="allinputs" id="imgurl" type="text" placeholder="Enter image URL">
+            <input class="allinputs" id="name" type="text" placeholder="Enter name">
+            <input class="allinputs" id="surname" type="text" placeholder="Enter surname">
+            <input class="allinputs" id="age" type="text" placeholder="Enter age">
+            <input class="allinputs" id="mail" type="text" placeholder="Enter mail">
+            <input class="allinputs" id="mobilenum" type="text" placeholder="Enter mobile number">
+            <div>
+                <button id="showbtn" onclick="view.showCards()">Generate card</button>
+                <button id="resetbtn" onclick="view.resetBtn()">Reset</button>
+            </div>
+            <hr style="border: unset;
+                        margin: 0px;
+                        width: 100%;
+                        border-bottom: 2px solid yellow;">
+            <div>
+                <input class="allinputs" id="filter" type="text"
+                    placeholder="Filter by: Name, Surname, Mail, MobileNum">
+                <button id="filterbtn" onclick="view.filterStudents()">Filter cards</button>
+            </div>
+        </div>
+        <article class="card">
+
+        </article>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
